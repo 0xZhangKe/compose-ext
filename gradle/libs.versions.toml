@@ -1,0 +1,104 @@
+[versions]
+kotlin = "1.8.21"
+kotlin-coroutine = "1.7.1"
+
+androidxComposeCompiler = "1.4.7"
+
+androidx-core = "1.7.0"
+androidx-appcompat = "1.4.1"
+androidx-annotation = "1.3.0"
+androidx-activity = "1.4.0"
+androidx-collection = "1.2.0"
+androidx-constraintlayout = "2.1.3"
+androidx-coordinatorlayout = "1.2.0"
+androidx-viewpager2 = "1.0.0"
+androidx-compose-bom = "2023.08.00"
+androidx-constraintlayout-compose = "1.1.0-alpha04"
+androidx-lifecycle = "2.4.1"
+androidx-paging = "3.1.1"
+androidx-paging-compose = "1.0.0-alpha18"
+
+ksp = "1.8.21-1.0.11"
+
+voyager = "1.0.0-rc07"
+
+accompanist-placeholder-material = "0.31.5-beta"
+
+androidGradlePlugin = "8.0.2"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+material = "1.8.0"
+
+[bundles]
+androidx-compose-ui = ["androidx.compose.ui", "androidx.compose.ui.tooling", "androidx.compose.ui.util"]
+androidx-compose-foundation = ["androidx.compose.foundation", "androidx.compose.foundation.layout"]
+androidx-compose-material = ["androidx.compose.material", "androidx.compose.material.icons.core", "androidx.compose.material.icons.extended"]
+androidx-lifecycle = ["androidx.lifecycle.common.java8", "androidx.lifecycle.process"]
+androidx-collection = ["androidx.collection", "androidx.collection.ktx"]
+androidx-activity = ["androidx.activity", "androidx.activity.ktx", "androidx.activity.compose"]
+androidx-viewmodel = ["androidx.viewmodel.ktx", "androidx.viewmodel.compose", "androidx.viewmodel.savedstate"]
+
+voyager = ["voyager.navigator", "voyager.bottom.sheet.navigator", "voyager.tab.navigator", "voyager.transitions", "voyager.android"]
+
+kotlin = ["kotlin.stdlib", "kotlin.coroutine.core", "kotlin.coroutine.android"]
+
+[libraries]
+androidx-core = { group = "androidx.core", name = "core", version.ref = "androidx.core" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx.core" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx.appcompat" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "androidx.annotation" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "androidx.activity" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidx.activity" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidx.activity" }
+androidx-collection = { group = "androidx.collection", name = "collection", version.ref = "androidx.collection" }
+androidx-collection-ktx = { group = "androidx.collection", name = "collection-ktx", version.ref = "androidx.collection" }
+
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidx.compose.bom" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-compose-material = { group = "androidx.compose.material", name = "material" }
+androidx-compose-material-icons-core = { group = "androidx.compose.material", name = "material-icons-core" }
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "androidx.constraintlayout.compose" }
+androidx-viewmodel_ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidx.lifecycle" }
+androidx-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidx.lifecycle" }
+androidx-viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "androidx.lifecycle" }
+androidx-lifecycle-compiler = { group = "androidx.lifecycle", name = "lifecycle-compiler", version.ref = "androidx.lifecycle" }
+androidx-lifecycle-common-java8 = { group = "androidx.lifecycle", name = "lifecycle-common-java8", version.ref = "androidx.lifecycle" }
+androidx-lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "androidx.lifecycle" }
+androidx-paging-runtime = { group = "androidx.paging", name = "paging-runtime", version.ref = "androidx.paging" }
+androidx-paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "androidx.paging.compose" }
+
+accompanist-placeholder-material = { group = "com.google.accompanist", name = "accompanist-placeholder-material", version.ref = "accompanist.placeholder.material"}
+
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+kotlin-coroutine-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlin.coroutine" }
+kotlin-coroutine-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlin.coroutine" }
+
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+voyager-navigator = { group = "cafe.adriel.voyager", name = "voyager-navigator", version.ref = "voyager" }
+voyager-bottom-sheet-navigator = { group = "cafe.adriel.voyager", name = "voyager-bottom-sheet-navigator", version.ref = "voyager" }
+voyager-tab-navigator = { group = "cafe.adriel.voyager", name = "voyager-tab-navigator", version.ref = "voyager" }
+voyager-transitions = { group = "cafe.adriel.voyager", name = "voyager-transitions", version.ref = "voyager" }
+voyager-android = { group = "cafe.adriel.voyager", name = "voyager-androidx", version.ref = "voyager" }
+
+[plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
