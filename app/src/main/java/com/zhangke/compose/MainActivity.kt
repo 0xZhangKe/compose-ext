@@ -17,7 +17,7 @@ import cafe.adriel.voyager.androidx.AndroidScreen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.Navigator
 import cafe.adriel.voyager.navigator.currentOrThrow
-import com.zhangke.compose.demo.SlickRoundCornerShapeScreen
+import com.zhangke.compose.demo.SlickRoundedCornerShapeScreen
 import com.zhangke.compose.ui.theme.ComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -47,7 +47,7 @@ class MainScreen : AndroidScreen() {
             ) {
                 Button(
                     onClick = {
-                        navigator.push(SlickRoundCornerShapeScreen())
+                        navigator.push(SlickRoundedCornerShapeScreen())
                     }
                 ) {
                     Text("SlickRoundCornerShape")

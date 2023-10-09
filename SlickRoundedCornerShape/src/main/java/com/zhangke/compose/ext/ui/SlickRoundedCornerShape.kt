@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import kotlin.math.sqrt
 
-class SlickRoundCornerShape(
+class SlickRoundedCornerShape(
     private val topStart: CornerSize,
     private val topEnd: CornerSize,
     private val bottomEnd: CornerSize,
@@ -128,43 +128,43 @@ class SlickRoundCornerShape(
     }
 }
 
-fun SlickRoundCornerShape(corner: CornerSize) =
-    SlickRoundCornerShape(corner, corner, corner, corner)
+fun SlickRoundedCornerShape(corner: CornerSize) =
+    SlickRoundedCornerShape(corner, corner, corner, corner)
 
-fun SlickRoundCornerShape(size: Dp) =
-    SlickRoundCornerShape(CornerSize(size))
+fun SlickRoundedCornerShape(size: Dp) =
+    SlickRoundedCornerShape(CornerSize(size))
 
-fun SlickRoundCornerShape(size: Float) =
-    SlickRoundCornerShape(CornerSize(size))
+fun SlickRoundedCornerShape(size: Float) =
+    SlickRoundedCornerShape(CornerSize(size))
 
-fun SlickRoundCornerShape(percent: Int) =
-    SlickRoundCornerShape(CornerSize(percent))
+fun SlickRoundedCornerShape(percent: Int) =
+    SlickRoundedCornerShape(CornerSize(percent))
 
-fun SlickRoundCornerShape(
+fun SlickRoundedCornerShape(
     topStart: Dp = 0.dp,
     topEnd: Dp = 0.dp,
     bottomEnd: Dp = 0.dp,
     bottomStart: Dp = 0.dp
-) = SlickRoundCornerShape(
+) = SlickRoundedCornerShape(
     topStart = CornerSize(topStart),
     topEnd = CornerSize(topEnd),
     bottomEnd = CornerSize(bottomEnd),
     bottomStart = CornerSize(bottomStart)
 )
 
-fun SlickRoundCornerShape(
+fun SlickRoundedCornerShape(
     topStart: Float = 0.0f,
     topEnd: Float = 0.0f,
     bottomEnd: Float = 0.0f,
     bottomStart: Float = 0.0f
-) = SlickRoundCornerShape(
+) = SlickRoundedCornerShape(
     topStart = CornerSize(topStart),
     topEnd = CornerSize(topEnd),
     bottomEnd = CornerSize(bottomEnd),
     bottomStart = CornerSize(bottomStart)
 )
 
-fun SlickRoundCornerShape(
+fun SlickRoundedCornerShape(
     /*@IntRange(from = 0, to = 100)*/
     topStartPercent: Int = 0,
     /*@IntRange(from = 0, to = 100)*/
@@ -173,7 +173,7 @@ fun SlickRoundCornerShape(
     bottomEndPercent: Int = 0,
     /*@IntRange(from = 0, to = 100)*/
     bottomStartPercent: Int = 0
-) = SlickRoundCornerShape(
+) = SlickRoundedCornerShape(
     topStart = CornerSize(topStartPercent),
     topEnd = CornerSize(topEndPercent),
     bottomEnd = CornerSize(bottomEndPercent),

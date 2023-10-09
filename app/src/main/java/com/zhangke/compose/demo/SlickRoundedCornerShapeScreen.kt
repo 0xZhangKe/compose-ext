@@ -19,16 +19,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import cafe.adriel.voyager.androidx.AndroidScreen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
-import com.zhangke.compose.ext.ui.SlickRoundCornerShape
+import com.zhangke.compose.ext.ui.SlickRoundedCornerShape
 import com.zhangke.compose.ui.composable.Toolbar
 
-class SlickRoundCornerShapeScreen : AndroidScreen() {
+class SlickRoundedCornerShapeScreen : AndroidScreen() {
 
     @Composable
     override fun Content() {
@@ -159,7 +158,7 @@ class SlickRoundCornerShapeScreen : AndroidScreen() {
                     .clipToBounds()
                     .background(
                         color = Color.Blue.copy(alpha = 0.3F),
-                        shape = SlickRoundCornerShape(radius),
+                        shape = SlickRoundedCornerShape(radius),
                     )
             )
         }

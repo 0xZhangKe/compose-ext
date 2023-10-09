@@ -16,4 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "compose-ext"
 include(":app")
-include(":SlickRoundCornerShape")
+include(":SlickRoundedCornerShape")

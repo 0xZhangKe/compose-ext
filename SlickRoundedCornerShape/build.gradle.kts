@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.zhangke.compose.ext.ui.slickroundcornershape"
+    namespace = "com.zhangke.compose.ext.ui.slickroundedcornershape"
 
     defaultConfig {
 
